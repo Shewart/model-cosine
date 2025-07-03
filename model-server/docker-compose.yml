@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  sign-language-app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Mount model files if needed
+      - ./model:/app/model:ro
+      # Mount static files
+      - ./static:/app/static:ro
+    restart: unless-stopped
+    # Note: Camera access might be limited in Docker
+    # For production, you might need to pass through camera devices
+    # devices:
+    #   - "/dev/video0:/dev/video0" 

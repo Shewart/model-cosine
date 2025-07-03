@@ -1,0 +1,19 @@
+# Already installed (but retry if issues arise)
+pip install pyttsx3 --timeout 100 --retries 5 --no-cache-dir
+pip install ultralytics
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 
+
+# Flask for web app
+pip install flask
+
+# Speech Recognition
+pip install SpeechRecognition
+
+# Microphone input (Windows only)
+pip install pyaudio
+
+# Image handling (already available with OpenCV but good to confirm)
+pip install opencv-python
+
+# To avoid caching issues
+pip install --no-cache-dir --upgrade pip setuptools

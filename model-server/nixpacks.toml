@@ -1,0 +1,7 @@
+# model-server/nixpacks.toml
+# --------------------------
+[phases.build]
+cmds = ["pip install -r model-server/requirements.txt"]
+
+[start]
+cmd = "python model-server/app.py"

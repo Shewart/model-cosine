@@ -1,0 +1,17 @@
+{
+  "name": "cosine-model-server",
+  "version": "1.0.0",
+  "description": "Sign language detection and text-to-speech model server",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "dev": "python app.py",
+    "install-deps": "pip install -r requirements.txt"
+  },
+  "keywords": ["sign-language", "ai", "flask", "computer-vision"],
+  "author": "Cosine Team",
+  "license": "MIT",
+  "engines": {
+    "python": ">=3.8"
+  }
+} 
